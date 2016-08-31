@@ -43,4 +43,19 @@ var color3 = "rgb(0, 0, 255)"
 	        $(".box3").css("background-color", "blue")
 	    })
 
+
+          $(".button5").on({mouseover:function(){
+                  $(this).css({
+                      left:(Math.random()*80)+"vw",
+                      top:(Math.random()*70)+"vh"
+                  })
+              }
+            })
+
+      $(".button5").click(function(){
+          $(".box1").css("background-color", "red")
+          $(".box2").css("background-color", "black")
+          $(".box3").css("background-color", "green")
+      })
+
 	})
