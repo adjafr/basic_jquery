@@ -25,6 +25,7 @@
 
 .box1 {
   background-color: red;
+  color: white;
   line-height: 72vh;
     text-align: center;
     vertical-align: middle;
@@ -36,6 +37,7 @@
 
 .box2 {
     background-color: green;
+    color: white;
     line-height: 72vh;
     text-align: center;
     vertical-align: middle;
@@ -46,6 +48,7 @@
 
 .box3 {
     background-color: blue;
+    color: white;
     vertical-align: middle;
     line-height: 72vh;
     text-align: center;
