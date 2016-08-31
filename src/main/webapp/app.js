@@ -59,52 +59,82 @@
 	var color3 = "rgb(0, 0, 255)";
 	
 	function boxColor(box) {
-	  console.log("button was pressed");
-	  console.log((0, _jquery2.default)(box).css("background-color"));
-	  if ((0, _jquery2.default)(box).css("background-color") == color1) {
-	    (0, _jquery2.default)(box).css("background-color", color2);
+	    console.log("button was pressed");
 	    console.log((0, _jquery2.default)(box).css("background-color"));
-	  } else if ((0, _jquery2.default)(box).css("background-color") == color2) {
-	    (0, _jquery2.default)(box).css("background-color", color3);
-	    console.log((0, _jquery2.default)(box).css("background-color"));
-	  } else {
-	    (0, _jquery2.default)(box).css("background-color", color1);
-	  }
+	    if ((0, _jquery2.default)(box).css("background-color") == color1) {
+	        (0, _jquery2.default)(box).css("background-color", color2);
+	        console.log((0, _jquery2.default)(box).css("background-color"));
+	    } else if ((0, _jquery2.default)(box).css("background-color") == color2) {
+	        (0, _jquery2.default)(box).css("background-color", color3);
+	        console.log((0, _jquery2.default)(box).css("background-color"));
+	    } else {
+	        (0, _jquery2.default)(box).css("background-color", color1);
+	    }
 	}
 	
 	(0, _jquery2.default)(document).ready(function () {
 	
-	  (0, _jquery2.default)(".button1").click(function () {
-	    boxColor(".box1");
-	  });
+	    (0, _jquery2.default)(".button1").hover(function () {
+	        (0, _jquery2.default)(this).css('cursor', 'pointer');
+	    }, function () {
+	        (0, _jquery2.default)(this).css('cursor', 'auto');
+	    });
 	
-	  (0, _jquery2.default)(".button2").click(function () {
-	    boxColor(".box2");
-	  });
+	    (0, _jquery2.default)(".button1").click(function () {
+	        boxColor(".box1");
+	    });
 	
-	  (0, _jquery2.default)(".button3").click(function () {
-	    boxColor(".box3");
-	  });
+	    (0, _jquery2.default)(".button2").hover(function () {
+	        (0, _jquery2.default)(this).css('cursor', 'pointer');
+	    }, function () {
+	        (0, _jquery2.default)(this).css('cursor', 'auto');
+	    });
 	
-	  (0, _jquery2.default)(".button4").click(function () {
-	    (0, _jquery2.default)(".box1").css("background-color", "red");
-	    (0, _jquery2.default)(".box2").css("background-color", "green");
-	    (0, _jquery2.default)(".box3").css("background-color", "blue");
-	  });
+	    (0, _jquery2.default)(".button2").click(function () {
+	        boxColor(".box2");
+	    });
 	
-	  (0, _jquery2.default)(".button5").on({ mouseover: function mouseover() {
-	      (0, _jquery2.default)(this).css({
-	        left: Math.random() * 80 + "vw",
-	        top: Math.random() * 70 + "vh"
-	      });
-	    }
-	  });
+	    (0, _jquery2.default)(".button3").hover(function () {
+	        (0, _jquery2.default)(this).css('cursor', 'pointer');
+	    }, function () {
+	        (0, _jquery2.default)(this).css('cursor', 'auto');
+	    });
 	
-	  (0, _jquery2.default)(".button5").click(function () {
-	    (0, _jquery2.default)(".box1").css("background-color", "red");
-	    (0, _jquery2.default)(".box2").css("background-color", "black");
-	    (0, _jquery2.default)(".box3").css("background-color", "green");
-	  });
+	    (0, _jquery2.default)(".button3").click(function () {
+	        boxColor(".box3");
+	    });
+	
+	    (0, _jquery2.default)(".button4").hover(function () {
+	        (0, _jquery2.default)(this).css('cursor', 'pointer');
+	    }, function () {
+	        (0, _jquery2.default)(this).css('cursor', 'auto');
+	    });
+	
+	    (0, _jquery2.default)(".button4").click(function () {
+	        (0, _jquery2.default)(".box1").css("background-color", "red");
+	        (0, _jquery2.default)(".box2").css("background-color", "green");
+	        (0, _jquery2.default)(".box3").css("background-color", "blue");
+	    });
+	
+	    (0, _jquery2.default)(".button5").hover(function () {
+	        (0, _jquery2.default)(this).css('cursor', 'pointer');
+	    }, function () {
+	        (0, _jquery2.default)(this).css('cursor', 'auto');
+	    });
+	
+	    (0, _jquery2.default)(".button5").on({ mouseover: function mouseover() {
+	            (0, _jquery2.default)(this).css({
+	                left: Math.random() * 80 + "vw",
+	                top: Math.random() * 70 + "vh"
+	            });
+	        }
+	    });
+	
+	    (0, _jquery2.default)(".button5").click(function () {
+	        (0, _jquery2.default)(".box1").css("background-color", "red");
+	        (0, _jquery2.default)(".box2").css("background-color", "black");
+	        (0, _jquery2.default)(".box3").css("background-color", "green");
+	    });
 	});
 
 /***/ },

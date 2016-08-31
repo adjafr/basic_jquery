@@ -24,18 +24,45 @@ var color3 = "rgb(0, 0, 255)"
 
 	$(document).ready(function(){
 
+    $(".button1").hover(function() {
+        $(this).css('cursor','pointer')
+
+    }, function() {
+        $(this).css('cursor','auto')
+    })
+
 	    $(".button1").click(function(){
 	        boxColor(".box1")
 	    })
+
+      $(".button2").hover(function() {
+          $(this).css('cursor','pointer')
+
+      }, function() {
+          $(this).css('cursor','auto')
+      })
 
 	    $(".button2").click(function(){
 	        boxColor(".box2")
 	    })
 
+      $(".button3").hover(function() {
+          $(this).css('cursor','pointer')
+
+      }, function() {
+          $(this).css('cursor','auto')
+      })
+
 	    $(".button3").click(function(){
 	        boxColor(".box3")
 	    })
 
+      $(".button4").hover(function() {
+          $(this).css('cursor','pointer')
+
+      }, function() {
+          $(this).css('cursor','auto')
+      })
 
 	    $(".button4").click(function(){
 	        $(".box1").css("background-color", "red")
@@ -43,6 +70,12 @@ var color3 = "rgb(0, 0, 255)"
 	        $(".box3").css("background-color", "blue")
 	    })
 
+      $(".button5").hover(function() {
+          $(this).css('cursor','pointer')
+
+      }, function() {
+          $(this).css('cursor','auto')
+      })
 
           $(".button5").on({mouseover:function(){
                   $(this).css({
