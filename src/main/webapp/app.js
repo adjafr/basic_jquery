@@ -54,8 +54,43 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	var color1 = "rgb(255, 0, 0)";
+	var color2 = "rgb(0, 128, 0)";
+	var color3 = "rgb(0, 0, 255)";
+	
+	function boxColor(box) {
+		console.log("button was pressed");
+		console.log((0, _jquery2.default)(box).css("background-color"));
+		if ((0, _jquery2.default)(box).css("background-color") == color1) {
+			(0, _jquery2.default)(box).css("background-color", color2);
+			console.log((0, _jquery2.default)(box).css("background-color"));
+		} else if ((0, _jquery2.default)(box).css("background-color") == color2) {
+			(0, _jquery2.default)(box).css("background-color", color3);
+			console.log((0, _jquery2.default)(box).css("background-color"));
+		} else {
+			(0, _jquery2.default)(box).css("background-color", color1);
+		}
+	}
+	
 	(0, _jquery2.default)(document).ready(function () {
-	  (0, _jquery2.default)('h1').css('color', 'red');
+	
+		(0, _jquery2.default)(".button1").click(function () {
+			boxColor(".box1");
+		});
+	
+		(0, _jquery2.default)(".button2").click(function () {
+			boxColor(".box2");
+		});
+	
+		(0, _jquery2.default)(".button3").click(function () {
+			boxColor(".box3");
+		});
+	
+		(0, _jquery2.default)(".button4").click(function () {
+			(0, _jquery2.default)(".box1").css("background-color", "red");
+			(0, _jquery2.default)(".box2").css("background-color", "green");
+			(0, _jquery2.default)(".box3").css("background-color", "blue");
+		});
 	});
 
 /***/ },

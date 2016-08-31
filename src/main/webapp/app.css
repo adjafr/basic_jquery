@@ -1,5 +1,91 @@
-.test {
-  background-color: black;
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+    width: 100vw;
+    height: 80vh;
+    background-color: lightgrey;
+}
+
+.flex-container2 {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+    width: 100vw;
+    height: 15vh;
+    background-color: darkgrey;
+
+}
+
+.box1 {
+  background-color: red;
+    text-align: center;
+    vertical-align: middle;
+
+    width: 31.2vw;
+    height: 77vh;
+    margin: 10px;
+}
+
+.box2 {
+    background-color: green;
+    text-align: center;
+    vertical-align: middle;
+    width: 31.2vw;
+    height: 77vh;
+    margin: 10px;
+}
+
+.box3 {
+    background-color: blue;
+    vertical-align: middle;
+    text-align: center;
+    width: 31.2vw;
+    height: 77vh;
+    margin: 10px;
+}
+
+.button1 {
+    background-color: yellow;
+    vertical-align: middle;
+    text-align: center;
+    width: 22.9vw;
+    height: 12vh;
+    margin: 10px;
+}
+
+.button2 {
+    background-color: yellow;
+    vertical-align: middle;
+    text-align: center;
+    width: 22.9vw;
+    height: 12vh;
+    margin: 10px;
+}
+
+.button3 {
+    background-color: yellow;
+    vertical-align: middle;
+    text-align: center;
+    width: 22.9vw;
+    height: 12vh;
+    margin: 10px;
+}
+
+.button4 {
+    background-color: yellow;
+    vertical-align: middle;
+    text-align: center;
+    width: 22.9vw;
+    height: 12vh;
+    margin: 10px;
+
 }
 
 /*# sourceMappingURL=app.css.map*/
